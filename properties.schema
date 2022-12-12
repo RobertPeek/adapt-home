@@ -1,0 +1,84 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object",
+          "properties":{
+            "_home": {
+              "type": "object",
+              "required": false,
+              "legend": "Home Button",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": false,
+                  "title": "Is Enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Controls whether the Home extension is enabled or disabled."
+                },
+                "_icon": {
+                  "type": "string",
+                  "required": true,
+                  "title": "Icon",
+                  "default": "icon-home",
+                  "inputType": "Text",
+                  "validators": []
+                },
+                "ariaLabel": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Aria Label",
+                  "default": "Back to main menu.",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                },
+                "_subIcon": {
+                  "type": "string",
+                  "required": true,
+                  "title": "Sub-pages Icon",
+                  "default": "icon-arrow-left",
+                  "inputType": "Text",
+                  "validators": []
+                },
+                "subAriaLabel": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Sub-pages Aria Label",
+                  "default": "Back to previous menu.",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object"
+        },
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// To go in the course.json file
+
+"_home": {
+  "_isEnabled": true,
+  "_icon": "icon-home",
+  "ariaLabel": "",
+  "_subIcon": "icon-arrow-left",
+  "subAriaLabel": ""
+},
